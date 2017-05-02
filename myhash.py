@@ -36,7 +36,7 @@ elif met == 2:
 	hsh = hashlib.sha1(o)
 	return hashlib.sha1(cleartextString.encode()).hexdigest()
 else:
-	print "errors"
+	print "error"
 
 def encode():	
 	print "Encode in?"
