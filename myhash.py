@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """ Alpha version
-	until have errors!"""
+	even have errors!"""
 import hashlib, sys
 from string import *
 #----------------------------------
