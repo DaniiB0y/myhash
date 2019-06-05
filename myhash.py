@@ -4,6 +4,7 @@ import os
 
 def encode():
     a = input("Hash -> ")
+    a = a.lower()
     h = hashlib.new(a)
     b = input("Text -> ")
     c = b.encode('utf-8')
