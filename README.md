@@ -1,2 +1,2 @@
 # myhash
-Beta version, Even have errors.
+Its working :D
