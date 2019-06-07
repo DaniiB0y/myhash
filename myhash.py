@@ -6,7 +6,7 @@ def decode():
 	print("Coming Soon")
 def encode():
     a = input("cryptography -> ")
-     a = a.strip().lower()
+    a = a.strip().lower()
     h = hashlib.new(a)
     b = input("Text -> ")
     c = b.encode('utf-8')
