@@ -1,26 +1,16 @@
-import hashlib, sys, string, os, re
-import urllib3
-import urllib
-from pyfiglet import Figlet
-def decode():
-	print("Coming Soon")
-def encode():
-    a = input("cryptography -> ")
-    a = a.strip().lower()
-    h = hashlib.new(a)
-    b = input("Text -> ")
-    c = b.encode('utf-8')
-    h.update(b"%b" % c)
-    print(h.hexdigest())
-def main():	
-	f = Figlet(font='slant')
-	print (f.renderText('myhash'))
-	print("Encode -> 1")
-	print("Decode -> 2")
-	s = int(input(": "))
-	if s == 1:
-		encode()
-	elif s == 2:
-		decode()	
-main()
-#creditos ao capitão do discord
+import hashlib, sys, string
+class myhash:
+	def encode(self, hash, string):
+		string = string.strip().lower()
+		string = string.encode('utf-8')
+		tips = hashlib.new(hash)
+		tips.update(b"%b" % string)
+		print("[+] Encrypt -> "+tips.hexdigest())
+	#def decode(self, string):
+try:
+	h = sys.argv[1]
+	s = sys.argv[2]
+	exec = myhash()
+	exec.encode(h, s)
+except:
+print("\n[+] Usage -> python3 {hash} {string}\n\n[+] Exemple -> python3 md5 a")
