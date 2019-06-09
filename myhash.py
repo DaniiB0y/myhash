@@ -13,4 +13,4 @@ try:
 	exec = myhash()
 	exec.encode(h, s)
 except:
-print("\n[+] Usage -> python3 {hash} {string}\n\n[+] Exemple -> python3 md5 a")
+	print("\n[+] Usage -> python3 {hash} {string}\n\n[+] Exemple -> python3 md5 a")
